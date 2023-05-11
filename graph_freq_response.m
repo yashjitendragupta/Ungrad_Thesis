@@ -1,3 +1,6 @@
+% Given a freq. response and frequency array, graphs a decent looking
+% semilog graph.
+
 function graph_freq_response(H, f,oct)
     smoothed = smoothSpectrum(abs(H),f,oct);
     semilogx(f,mag2db(smoothed*10));

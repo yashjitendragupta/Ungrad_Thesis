@@ -1,7 +1,10 @@
 close all
 clear all
+
+% Plots figures for the frequency tests and also finds the avg MSE for
+% whichever result you choose. 
 folder = '.\Results\freq_result';
-%% find error arry
+%% find error array
 mse_arr = [];
 scale_arr = [];
 

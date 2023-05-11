@@ -2,8 +2,9 @@ close all
 clear all
 folder = '.\Results\FC_result';
 Fs = 1000;
-
-%% find error arry
+% Plots figures for the time domain tests and also finds the avg MSE for
+% whichever result you choose. 
+%% find error array
 mse_arr = [];
 scale_arr = [];
 

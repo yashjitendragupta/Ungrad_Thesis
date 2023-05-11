@@ -1,3 +1,4 @@
+% Finds what scaling factor minimizes MSE and returns both.
 function [output,scale]= spectral_error(h1,h2)
     h1abs = abs(h1);
     h2abs = abs(h2);

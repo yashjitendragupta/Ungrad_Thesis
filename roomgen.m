@@ -4,10 +4,10 @@ high_horiz = 12;
 low_height = 2.5;
 high_height = 5;
 num_samples = 1000;
-Fs = 500;
+Fs = 1000;
 % 48000 % Fs == 0 
 % to downsample!
-folder = 'test_set\';
+folder = 'high_res_test_set\';
 
 %% vars for iterations
 horiz_diff = high_horiz-low_horiz;
@@ -25,6 +25,7 @@ for i=1:num_samples
 end
 fprintf('\ndone!')
 
+samples_to_np
 
 
 

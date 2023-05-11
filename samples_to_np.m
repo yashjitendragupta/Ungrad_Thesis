@@ -1,12 +1,12 @@
 %% Sample to NP
 
 % Takes files from folder\time* and converts them to f domain w 250
-% samples, one per hz, then saves them as numpy arrays.
+% samples, one per hz, then saves them as mat arrays.
 close all
 clear all
 addpath('mat2np')
 % dataset name
-folder = 'test_set/';
+folder = 'train_set/';
 mkdir([folder 'freq_integrated/'])
 mkdir([folder 'freq_listener/'])
 
@@ -22,7 +22,7 @@ files_integrated = fds.Files;
 if(only_five)
     numFiles = 5;
 else
-    numFiles = length(files_integrated);
+    numFiles = length(files_integrated)
 end
 fds = fileDatastore([folder 'time_listener/*'], 'ReadFcn', @importdata);
 
